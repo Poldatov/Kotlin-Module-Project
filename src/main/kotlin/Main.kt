@@ -1,3 +1,8 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    val menu = Menu(scanner)
+    val app = NotesApp(menu)
+    app.run()
 }
